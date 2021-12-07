@@ -41,7 +41,7 @@ background-size: cover;
             <% shortUrls.forEach(shortUrl => { %>
                 <tr>
                     <td><a href="<%= shortUrl.full %>"><%= shortUrl.full %></a>
-                    <td><a href="<%= shortUrl.short %>"><%= shortUrl.short %></a></td>
+                    <td><a href="<%= shortUrl.short %>" target="blank"><%= shortUrl.short %></a></td>
                     <td><%= shortUrl.clicks %></td>   
                     </td>
                 </tr>

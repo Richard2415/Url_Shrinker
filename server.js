@@ -1,10 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const shortUrl = require('./models/shortUrl');
 const ShortUrl = require('./models/shortUrl')
 const app = express();
 
-mongoose.connect('mongodb://localhost/urlShortener', {
+
+mongoose.connect('mongodb+srv://UrlShrinker:UrlShrinker123@cluster0.9nxou.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
     useNewUrlParser: true, useUnifiedTopology: true
 })
 
